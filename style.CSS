@@ -32,9 +32,11 @@ input {
   transition: background-color is linear;
   border-radius: 5px;
   border: none;
+  width: 10vw;
 }
 .header__input--buscar {
   cursor: pointer;
+  width: 5vw;
 }
 header img {
   width: 20vw;
