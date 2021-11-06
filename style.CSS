@@ -10,7 +10,8 @@ body {
 
 header {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   background-color: rgb(255, 189, 0);
   box-shadow: 5px 8px 9px rgb(255, 189, 0);
   width: 100vw;
@@ -23,7 +24,7 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 30vw;
+  width: 30%;
 }
 
 input {
@@ -43,17 +44,21 @@ input {
 }
 
 header a img {
-  width: 26vw;
+  height: 80%;
   transition: hover 3s;
 }
+.div__logo {
+  width: 20%;
+  height: 100%;
+}
 header img:hover {
-  width: 29vw;
+  height: 100%;
 }
 
 /*NAV*********************************************************************************************************************/
 
 nav {
-  width: 30vw;
+  width: 30%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -144,7 +149,7 @@ h2 {
 
 @keyframes slidein2 {
   from {
-    margin-right: 15%;
+    margin-right: 10%;
   }
 
   to {
@@ -159,7 +164,7 @@ h2 {
 
 @keyframes slidein {
   from {
-    margin-left: 20%;
+    margin-left: 10%;
   }
 
   to {
@@ -310,7 +315,7 @@ footer a {
   text-decoration: none;
   color: rgb(172, 255, 47);
   font-size: 2em;
-  margin-left: 8%;
+  margin-left: 6%;
 }
 
 footer p {
@@ -326,7 +331,7 @@ footer p {
   padding-bottom: 2%;
 }
 .footer__ul {
-  margin-left: 8%;
+  margin-left: 6%;
   display: inline-block;
   width: 14%;
   list-style-type: none;
