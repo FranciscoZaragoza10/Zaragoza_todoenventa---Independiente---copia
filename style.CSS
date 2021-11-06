@@ -12,11 +12,11 @@ header {
   display: flex;
   justify-content: space-between;
   background-color: rgb(255, 189, 0);
-  position: sticky;
-  z-index: 5;
   box-shadow: 5px 8px 9px rgb(255, 189, 0);
   width: 100vw;
   height: 7vh;
+  position: sticky;
+  z-index: 1;
 }
 
 .header__div--buscar {
@@ -44,8 +44,6 @@ input {
 
 header a img {
   width: 26vw;
-  position: relative;
-  top: 10%;
   transition: hover 3s;
 }
 header img:hover {
@@ -59,7 +57,8 @@ nav {
   padding-left: 1%;
   width: 30vw;
   height: 100%;
-  position: relative;
+  display: flex;
+  align-items: center;
 }
 
 li a:hover {
@@ -67,9 +66,7 @@ li a:hover {
 }
 nav ul {
   list-style-type: none;
-  position: absolute;
-  top: 35%;
-  left: 2%;
+
   width: 100%;
 }
 .nav__li li {
@@ -84,7 +81,6 @@ nav ul {
   padding: 5px;
   padding-right: 10px;
   font-weight: bold;
-  transition: background-color is linear;
   text-decoration: none;
 }
 /*MAIN index***************************************************************************************************************/
@@ -183,7 +179,7 @@ h2 {
 }
 
 #email {
-  width: 80%;
+  width: 90%;
 }
 #rol {
   width: 100%;
@@ -285,7 +281,7 @@ h2 {
   padding: 20% 12% 20% 12%;
   background-size: cover;
   position: relative;
-  margin-top: -3%;
+  margin-top: -0.005%;
 }
 .nosotros__main__h2 {
   background-color: rgba(255, 255, 255, 0.548);
