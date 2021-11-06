@@ -219,7 +219,7 @@ h2 {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   justify-items: center;
-  align-items: center;
+  align-items: stretch;
   grid-gap: 0.2%;
 }
 .img1 {
@@ -250,7 +250,7 @@ h2 {
   padding: 5% 25% 12% 25%;
   color: #4a00e0;
   border-style: dotted;
-  background-image: url(IMGS/FAQ.jpg);
+  background-image: url(imgs/FAQ.jpg);
   background-size: cover;
 }
 .faq__section__table h1 {
