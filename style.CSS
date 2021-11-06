@@ -63,8 +63,10 @@ li a:hover {
   color: rgba(255, 0, 0, 0.822);
 }
 nav ul {
+  display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
-
+  justify-content: space-around;
   width: 100%;
 }
 .nav__li li {
@@ -77,7 +79,7 @@ nav ul {
   background-color: rgba(255, 255, 255, 0.303);
   text-align: center;
   padding: 5px;
-  padding-right: 10px;
+  padding-left: 10px;
   font-weight: bold;
   text-decoration: none;
 }
