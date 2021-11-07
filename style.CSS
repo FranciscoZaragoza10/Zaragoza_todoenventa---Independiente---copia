@@ -260,18 +260,18 @@ main {
   position: absolute;
   display: inline-block;
   margin: 5% 0% 5% 25%;
-  color: #4a00e0;
+  color: blue;
   border-style: dotted;
 }
 .productos__table th {
   font-weight: 700;
   font-size: 1.3vw;
-  background-color: rgba(0, 255, 255, 0.384);
+  background-color: rgba(128, 128, 128, 0.466);
   backdrop-filter: blur(10px);
   padding: 8px;
 }
 .productos__table td {
-  background-color: rgba(0, 255, 255, 0.384);
+  background-color: rgba(128, 128, 128, 0.514);
   backdrop-filter: blur(10px);
 }
 
@@ -321,7 +321,6 @@ main {
 }
 .img4 {
   grid-area: img4;
-
   height: 100%;
   width: 100%;
   background-image: url(imgs/productos\ 4.jpg);
@@ -330,7 +329,6 @@ main {
 }
 .img5 {
   grid-area: img5;
-
   height: 100%;
   width: 100%;
   background-image: url(imgs/productos\ 5.jpg);
@@ -339,7 +337,6 @@ main {
 }
 .img6 {
   grid-area: img6;
-
   height: 100%;
   width: 100%;
   background-image: url(imgs/productos\ 6.jpg);
@@ -348,7 +345,6 @@ main {
 }
 .img7 {
   grid-area: img7;
-
   height: 100%;
   width: 100%;
   background-image: url(imgs/productos\ 7.jpg);
