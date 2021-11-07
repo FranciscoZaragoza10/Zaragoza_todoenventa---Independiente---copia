@@ -222,10 +222,15 @@ h2 {
   box-shadow: 5px 5px 5px gray;
   height: 30vh;
 }
+.img__tarjeta:hover{
+  transform: scale(1.1,1.1);
+}
 .img__tarjeta {
   margin-top: 7%;
   max-height: 70%;
   max-width: 98%;
+  cursor: pointer;
+  
 }
 /*MAIN CONTACTO********************************************************************************************************************/
 
@@ -266,8 +271,8 @@ h2 {
   position: absolute;
   transform: scale(1.1, 0.8);
   left: 23%;
-  top: -1%;
-  opacity: 80%;
+  top: 1%;
+  opacity: 95%;
   z-index: 0;
 }
 /*MAIN PRODUCTOS********************************************************************************************************************/
