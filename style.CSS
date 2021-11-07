@@ -14,8 +14,8 @@ header {
   justify-content: space-around;
   background: linear-gradient(
     to left,
-    rgb(0, 36, 179, 0.8),
-    rgb(0, 51, 255, 0.5)
+    rgb(121, 242, 29, 0.6),
+    rgb(121, 242, 29, 0.95)
   );
   box-shadow: 5px 8px 9px rgb(0, 36, 179, 0.7);
   width: 100%;
@@ -23,7 +23,12 @@ header {
   position: sticky;
   z-index: 1;
 }
-
+.div__logo {
+  margin-top: 0.5%;
+  margin-bottom: 0.5;
+  display: flex;
+  align-items: center;
+}
 .header__div--buscar {
   display: flex;
   justify-content: space-around;
@@ -48,11 +53,11 @@ input {
 }
 
 header a img {
-  width: 25vw;
+  width: 27vw;
   transition: hover 3s;
 }
 header img:hover {
-  width: 26vw;
+  width: 28vw;
 }
 
 /*NAV*********************************************************************************************************************/
@@ -154,7 +159,7 @@ main {
 
 .main_p {
   margin-top: 2%;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   color: white;
   text-align: center;
   width: 50%;
@@ -403,44 +408,53 @@ footer a:hover {
   font-weight: bold;
 }
 footer {
-  display: inline-block;
+  display: flex;
+  justify-content: space-around;
   color: white;
-  background: linear-gradient(to right, rgb(0, 36, 179, 0.7), rgb(0, 51, 255));
+  background: linear-gradient(
+    to right,
+    rgb(20, 42, 166, 0.7),
+    rgb(20, 42, 166, 0.4)
+  );
   font-size: 1.2em;
   box-shadow: 10px -10px 5px gray;
   z-index: 1;
   top: 0;
   width: 100%;
 }
-footer a {
-  display: inline-block;
-  text-decoration: none;
-  color: rgb(172, 255, 47);
-  font-size: 2em;
-  margin-left: 6%;
+.div__ubicacion {
+  display: flex;
+  flex-wrap: wrap;
+  width: 30%;
 }
-
+footer a {
+  text-decoration: none;
+  color: rgb(121, 242, 29);
+  font-size: 2em;
+}
+footer a:hover {
+  font-size: 2.2em;
+}
 footer p {
-  width: 95vw;
-  padding-left: 19%;
+  width: 90%;
+  padding-left: 14%;
 }
 
 .footer__em {
-  position: relative;
   align-self: center;
   color: aqua;
   font-weight: bold;
   padding-bottom: 2%;
 }
 .footer__ul {
-  margin-left: 6%;
+  margin-left: 19%;
   display: inline-block;
-  width: 14%;
+  width: 80%;
   list-style-type: none;
 }
 
 .footer__iframe--map {
   display: inline-block;
-  margin-left: 12%;
   margin-top: 1%;
+  margin-bottom: 1%;
 }
