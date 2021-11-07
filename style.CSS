@@ -95,11 +95,7 @@ nav ul {
   border-radius: 5px;
 }
 /*MAIN index***************************************************************************************************************/
-main {
-  width: 100%;
-  background-color: white;
-  margin-top: 1%;
-}
+
 em {
   color: blue;
 }
@@ -121,7 +117,7 @@ h2 {
   width: 100%;
   font-size: 1.2rem;
 }
-main {
+.main__index {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -130,7 +126,7 @@ main {
   background: linear-gradient(to left, white, rgba(128, 128, 128, 0.075));
 }
 .main__section {
-  margin-top: 0.05%;
+  margin-top: 1.05%;
   display: flex;
   width: 95vw;
   height: 25%;
@@ -232,11 +228,22 @@ main {
   max-width: 98%;
 }
 /*MAIN CONTACTO********************************************************************************************************************/
+
+.main__contacto {
+  background-position: center;
+  background-image: url(imgs/landing_artes.jpg);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 86vh;
+  background-size: cover;
+}
 .main__form {
-  width: 30%;
+  margin: 10% 0% 10% 0%;
+  width: 40%;
   display: block;
-  margin: 5% 0% 15% 30%;
   color: #4a00e0;
+  z-index: 1;
 }
 #name {
   width: 80%;
@@ -254,6 +261,14 @@ main {
 }
 #comentarios {
   width: 100%;
+}
+.circulo {
+  position: absolute;
+  transform: scale(1.1, 0.8);
+  left: 23%;
+  top: -1%;
+  opacity: 80%;
+  z-index: 0;
 }
 /*MAIN PRODUCTOS********************************************************************************************************************/
 .productos__table {
@@ -366,7 +381,8 @@ main {
   background: linear-gradient(
     to right,
     rgba(255, 217, 0, 0.918),
-    rgba(255, 0, 0, 0.247)
+    rgba(255, 0, 0, 0.247)) ;
+    backdrop-filter: blur(10%) ;
   );
 }
 .faq__section__table--td {
@@ -374,12 +390,14 @@ main {
   width: 400px;
   padding-bottom: 5%;
   background-color: rgba(245, 247, 243, 0.753);
+  backdrop-filter: blur(10%);
 }
 .faq__section__table--th {
   padding-bottom: 30px;
   font-weight: 700;
   font-size: 1.3em;
   background-color: rgba(0, 255, 255, 0.568);
+  backdrop-filter: blur(10%);
 }
 
 /*MAIN NOSOTROS********************************************************************************************************************/
