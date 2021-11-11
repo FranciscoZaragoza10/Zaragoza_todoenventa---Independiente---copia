@@ -269,7 +269,7 @@ h2 {
 }
 .circulo {
   position: absolute;
-  transform: scale(1.1, 0.8);
+  transform: scale(.95, .95);
   left: 23%;
   top: 1%;
   opacity: 95%;
@@ -466,14 +466,21 @@ footer p {
   padding-bottom: 2%;
 }
 .footer__ul {
-  margin-left: 19%;
+  margin-left: 14%;
   display: inline-block;
   width: 80%;
   list-style-type: none;
+  font-size: 1rem;
 }
 
 .footer__iframe--map {
   display: inline-block;
-  margin-top: 1%;
-  margin-bottom: 1%;
+ }
+.footer__iconos{
+  display: flex;
+  flex-wrap: wrap;
+  width: 25vw;
+  height: 100px;
+  justify-content: space-around;
+  align-content: center;
 }
