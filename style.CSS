@@ -9,19 +9,14 @@ body {
 }
 
 header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  
   background: linear-gradient(
     to left,
     rgb(121, 242, 29, 0.6),
     rgb(121, 242, 29, 0.95)
   );
   box-shadow: 5px 8px 9px rgb(0, 36, 179, 0.7);
-  width: 100%;
-  align-items: center;
-  position: sticky;
-  z-index: 1;
+  
 }
 .div__logo {
   margin-top: 0.5%;
@@ -29,25 +24,25 @@ header {
   display: flex;
   align-items: center;
 }
-.header__div--buscar {
+/.header__div--buscar {
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 30%;
 }
 
-input {
+/input {
   color: rgb(209, 44, 44);
   background-color: rgba(255, 255, 255, 0.577);
   border-radius: 5px;
   border: none;
 }
-.header__input--buscar {
+//.header__input--buscar {
   cursor: pointer;
   width: 30%;
   height: 20px;
 }
-.header__input--text {
+/.header__input--text {
   width: 40%;
   height: 20px;
 }
@@ -56,34 +51,34 @@ header a img {
   width: 27vw;
   transition: hover 3s;
 }
-header img:hover {
+/header img:hover {
   width: 28vw;
 }
 
 /*NAV*********************************************************************************************************************/
 
-nav {
+/nav {
   width: 30%;
   height: 100%;
   display: flex;
   align-items: center;
 }
 
-li a:hover {
+/li a:hover {
   color: rgba(5, 40, 242, 0.95);
 }
-nav ul {
+/nav ul {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
   justify-content: space-around;
   width: 100%;
 }
-.nav__li li {
+/.nav__li li {
   display: inline-block;
   font-size: 1rem;
 }
-.nav__a a {
+/.nav__a a {
   margin: 0;
   color: white;
   background-color: rgba(0, 0, 0, 0.158);
@@ -453,6 +448,7 @@ footer a {
 }
 footer a:hover {
   font-size: 2.2em;
+  color:#4a00e0}
 }
 footer p {
   width: 90%;
