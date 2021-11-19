@@ -110,7 +110,7 @@ h2 {
 .main__h2--cualidades {
   margin-bottom: 1vh;
   width: 100%;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 .main__index {
   display: flex;
@@ -122,22 +122,17 @@ h2 {
 }
 .main__section {
   margin-top: 2%;
-  display: flex;
-  width: 95vw;
-  height: 25%;
-  flex-wrap: wrap;
-  justify-content: start;
   align-content: center;
   background-position: center;
   background-image: url(imgs/landing_artes.jpg);
 }
-.div__section2 {
+/.div__section2 {
   display: flex;
   flex-wrap: wrap;
   width: 45%;
-  height: 20%;
+  height: auto;
 }
-.main__section2 {
+/.main__section2 {
   margin-top: 2%;
   display: flex;
   width: 95vw;
@@ -148,15 +143,10 @@ h2 {
   box-shadow: 2px 3px 5px 1px gray;
 }
 
-.main_p {
+/.main_p {
   margin-top: 2%;
-  font-size: 1.7rem;
-  color: white;
   text-align: center;
-  width: 50%;
-
   backdrop-filter: blur(9px);
-  background-color: rgba(8, 0, 0, 0.315);
   border-radius: 7px;
 }
 .main__img--artesania {
@@ -166,8 +156,8 @@ h2 {
   transform: scale(1.01, 1.01);
 }
 
-.main__img--cualidades {
-  height: 15vh;
+/.main__img--cualidades {
+  max-height: 100%;
   border-radius: 4%;
 }
 .slidein2 {
@@ -206,7 +196,7 @@ h2 {
   flex-wrap: wrap;
   width: 100%;
 }
-.index__tarjeta {
+/.index__tarjeta {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -217,10 +207,10 @@ h2 {
   box-shadow: 2px 3px 5px gray;
   height: 30vh;
 }
-.img__tarjeta:hover{
+/.img__tarjeta:hover{
   transform: scale(1.1,1.1);
 }
-.img__tarjeta {
+/.img__tarjeta {
   margin-top: 7%;
   max-height: 70%;
   max-width: 98%;
