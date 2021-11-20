@@ -35,7 +35,7 @@
       <nav class="navbar navbar-expand-sm navbar-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html"
-            ><img class="img-fluid" src="imgs/logotev_horizontal.png"
+            ><img class="img-fluid mx-5" src="imgs/logotev_horizontal.png" style="max-width: 22vw;"
           /></a>
           <button
             class="navbar-toggler"
@@ -82,10 +82,27 @@
       </nav>
     </header>
     <main class="d-flex flex-wrap justify-content-center">
-      <section class="main__section container-lg d-flex flex-wrap">
+      <section
+        class="bg-image container-lg d-flex flex-wrap mt-3"
+        style="
+          background-image: url(imgs/landing_artes.jpg);
+          background-position: center;
+        "
+      >
         <div class="row">
-          <div class="col-md-8 col-lg-5">
-            <h1 class="main_p slidein fs-3 container text-white m-5 bg_text">
+          <div class="col-md-8 col-lg-5 col-8">
+            <h1
+              class="
+                text-center
+                main_p
+                slidein
+                fs-3
+                container
+                text-white
+                my-5
+                bg_text
+              "
+            >
               Encuentra, compra y disfruta tu producto, apoyando a nuestra mano
               de obra artesanal en México
             </h1>
@@ -97,7 +114,6 @@
         class="
           d-flex
           flex-wrap
-          main__section2
           container-md
           m-3
           justify-content-evenly
@@ -113,26 +129,55 @@
             p-3
             justify-content-center
             align-items-center
+            bg-image
+          "
+          style="
+            background-image: url(imgs/fondo_cualidades.jpg);
+            background-position: center;
+            background-size: cover;
           "
         >
-          <h2 class="main__h2--cualidades fs-5">
+          <h2 class="fs-3 text-primary text-center">
             Por que comprar en Todo En Venta:
           </h2>
           <ul class="list-group list-group-flush text-center">
-            <li class="list-group-item">Productos con Causa</li>
-            <li class="list-group-item">Productos hechos en México</li>
-            <li class="list-group-item">
+            <li
+              class="list-group-item fs-4"
+              style="background-color: rgba(255, 255, 255, 0.13)"
+            >
+              Productos con Causa
+            </li>
+            <li
+              class="list-group-item fs-4"
+              style="background-color: rgba(255, 255, 255, 0.13)"
+            >
+              Productos hechos en México
+            </li>
+            <li
+              class="list-group-item fs-4"
+              style="background-color: rgba(255, 255, 255, 0.13)"
+            >
               Te mostramos el origen de tu producto
             </li>
-            <li class="list-group-item">Diseño sin igual</li>
-            <li class="list-group-item">Producto Artesanal</li>
+            <li
+              class="list-group-item fs-4"
+              style="background-color: rgba(255, 255, 255, 0.13)"
+            >
+              Diseño sin igual
+            </li>
+            <li
+              class="list-group-item fs-4"
+              style="background-color: rgba(255, 255, 255, 0.13)"
+            >
+              Producto Artesanal
+            </li>
           </ul>
         </div>
         <!-- Carousel -->
         <div
           id="demo"
-          class="carousel slide"
-          style="width: 280px"
+          class="carousel slide mt-3"
+          style="width: 220px"
           data-bs-ride="carousel"
         >
           <!-- Indicators/dots -->
@@ -162,7 +207,7 @@
                 src="imgs/cualidades.jpg"
                 alt="Los Angeles"
                 class="d-block w-100"
-                style="height: 400px"
+                style="height: 350px"
               />
               <div class="carousel-caption">
                 <h3>Trato Justo</h3>
@@ -174,7 +219,7 @@
                 src="imgs/index_cualidades_2.jpg"
                 alt="Chicago"
                 class="d-block w-100"
-                style="height: 400px"
+                style="height: 350px"
               />
               <div class="carousel-caption">
                 <h3>Diseño</h3>
@@ -186,7 +231,7 @@
                 src="imgs/index_cualidades_3.jpg"
                 alt="New York"
                 class="d-block w-100"
-                style="height: 400px"
+                style="height: 350px"
               />
               <div class="carousel-caption">
                 <h3>Calidad</h3>
@@ -240,7 +285,7 @@
         >
           <img
             class="img__tarjeta w-100"
-            src="imgs/index_productos_1"
+            src="imgs/index_productos_1.png"
             alt="cualidades"
           />
           <h3 class="text-primary">Jabón Cera</h3>
@@ -324,32 +369,38 @@
         </div>
       </section>
     </main>
-    <footer class="text-center text-lg-start bg-light text-muted">
+    <footer
+      class="text-center text-lg-start text-white"
+      style="background: linear-gradient(
+        to right,
+        rgb(20, 42, 166, 0.7),
+        rgb(20, 42, 166, 0.4)""
+    >
       <!-- Section: Social media -->
       <section
         class="
           d-flex
           justify-content-center justify-content-lg-between
-          p-4
+          p-2
           border-bottom
         "
       >
         <!-- Left -->
-        <div class="me-5 d-none d-lg-block">
-          <span>Siguenos en nuestras redess:</span>
+        <div class="me-5 d-none d-lg-block fs-4">
+          <span>Siguenos en nuestras redes:</span>
         </div>
         <!-- Left -->
 
         <!-- Right -->
         <div>
           <a href="" class="me-4 text-reset">
-            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-facebook-f fs-2"></i>
           </a>
           <a href="" class="me-4 text-reset">
-            <i class="fab fa-twitter"></i>
+            <i class="fab fa-twitter fs-2"></i>
           </a>
           <a href="" class="me-4 text-reset">
-            <i class="fab fa-instagram"></i>
+            <i class="fab fa-instagram fs-2"></i>
           </a>
         </div>
         <!-- Right -->
@@ -358,35 +409,27 @@
 
       <!-- Section: Links  -->
       <section class="">
-        <div class="container text-center text-md-start mt-5">
+        <div class="container text-center text-md-start mt-1">
           <!-- Grid row -->
           <div class="row mt-3">
             <!-- Grid column -->
-            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-2">
               <!-- Content -->
-              <h6 class="text-uppercase fw-bold mb-4">
-                <i class="fas fa-gem me-3"></i>Todo en Venta
+              <h6 class="text-uppercase fw-bold mb-4 fs-3">
+                Todo en Venta
               </h6>
-              <iframe
-                class="footer__iframe--map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7531.644463751067!2d-99.66136037494711!3d19.29009534786161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cd89ea9f7cd297%3A0xa29b8785b09a6143!2sCentro%2C%2050000%20Toluca%20de%20Lerdo%2C%20M%C3%A9x.!5e0!3m2!1ses-419!2smx!4v1633648152889!5m2!1ses-419!2smx"
-                width="300"
-                height="200"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-              ></iframe>
+              
             </div>
             <!-- Grid column -->
 
             <!-- Grid column -->
 
             <!-- Grid column -->
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-1">
               <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4">Mapa</h6>
+              <h6 class="text-uppercase fw-bold mb-2">Navega</h6>
               <p>
-                <a href="productos.html" class="text-reset">Productos</a>
+                <a href="productos.html" class="text-reset mb-0">Productos</a>
               </p>
               <p>
                 <a href="nosotros.html" class="text-reset">Nosotros</a>
@@ -401,9 +444,9 @@
             <!-- Grid column -->
 
             <!-- Grid column -->
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-2">
               <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+              <h6 class="text-uppercase fw-bold mb-2">Contacto</h6>
               <p>
                 <i class="fas fa-home me-3"></i> Juarez 25 / Centro / Toluca /
                 CP: 50000 / Estado de México / México
