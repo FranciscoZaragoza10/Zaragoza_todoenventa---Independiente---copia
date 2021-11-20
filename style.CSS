@@ -143,10 +143,11 @@ h2 {
   box-shadow: 2px 3px 5px 1px gray;
 }
 
-/.main_p {
+.bg_text {
   margin-top: 2%;
   text-align: center;
   backdrop-filter: blur(9px);
+  background-color: rgba(0, 0, 0, 0.411);
   border-radius: 7px;
 }
 .main__img--artesania {

@@ -85,23 +85,14 @@
       <section class="main__section container-lg d-flex flex-wrap">
         <div class="row">
           <div class="col-md-8 col-lg-5">
-            <h1
-              class="
-                main_p
-                slidein
-                fs-3
-                container
-                text-white
-                bg-dark bg-transparent
-                p-5
-              "
-            >
+            <h1 class="main_p slidein fs-3 container text-white m-5 bg_text">
               Encuentra, compra y disfruta tu producto, apoyando a nuestra mano
               de obra artesanal en México
             </h1>
           </div>
         </div>
       </section>
+
       <section
         class="
           d-flex
@@ -114,47 +105,107 @@
           align-items-md-center
         "
       >
-        <div class="d-flex flex-wrap col-lg-6 p-5">
+        <div class="d-flex flex-wrap col-lg-6 p-5 justify-content-center">
           <h2 class="main__h2--cualidades fs-5">
-            Cualidades que encontraras en nuestros productos:
+            Por que comprar en Todo En Venta:
           </h2>
           <ul class="list-group list-group-flush text-center">
-            <li class="list-group-item">Calidad validada</li>
-            <li class="list-group-item">Justa relacion con artesanos</li>
+            <li class="list-group-item">Productos con Causa</li>
+            <li class="list-group-item">Productos hechos en México</li>
             <li class="list-group-item">
-              Posibilidad de conocer el origen y el negocio productor
+              Te mostramos el origen de tu producto
             </li>
-            <li class="list-group-item">Distincion en diseño</li>
-            <li class="list-group-item">Relacion Justa Calidad/Precio</li>
+            <li class="list-group-item">Diseño sin igual</li>
+            <li class="list-group-item">Producto Artesanal</li>
           </ul>
         </div>
+        <!-- Carousel -->
         <div
-          class="
-            container
-            d-flex
-            col-lg-5 col-md-6
-            d-flex
-            justify-content-evenly
-          "
+          id="demo"
+          class="carousel slide"
+          style="width: 280px"
+          data-bs-ride="carousel"
         >
-          <img
-            class="main__img--cualidades rounded"
-            src="imgs/cualidades.jpg"
-            alt="cualidades"
-            style="height: 200px"
-          />
-          <img
-            class="main__img--cualidades rounded"
-            src="imgs/index_cualidades_2.jpg"
-            alt="cualidades"
-            style="height: 200px"
-          />
-          <img
-            class="main__img--cualidades rounded"
-            src="imgs/index_cualidades_3.jpg"
-            alt="cualidades"
-            style="height: 200px"
-          />
+          <!-- Indicators/dots -->
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#demo"
+              data-bs-slide-to="0"
+              class="active"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#demo"
+              data-bs-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#demo"
+              data-bs-slide-to="2"
+            ></button>
+          </div>
+
+          <!-- The slideshow/carousel -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="imgs/cualidades.jpg"
+                alt="Los Angeles"
+                class="d-block w-100"
+                style="height: 400px"
+              />
+              <div class="carousel-caption">
+                <h3>Trato Justo</h3>
+                <p>Precio justo de y para nuestros artesanos</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="imgs/index_cualidades_2.jpg"
+                alt="Chicago"
+                class="d-block w-100"
+                style="height: 400px"
+              />
+              <div class="carousel-caption">
+                <h3>Diseño</h3>
+                <p>Encuentra inovación y tendencia</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="imgs/index_cualidades_3.jpg"
+                alt="New York"
+                class="d-block w-100"
+                style="height: 400px"
+              />
+              <div class="carousel-caption">
+                <h3>Calidad</h3>
+                <p>
+                  Generamos confianza al validar los materiales de nuestros
+                  productos
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Left and right controls/icons -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
         </div>
       </section>
       <section
@@ -310,8 +361,8 @@
               <iframe
                 class="footer__iframe--map"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7531.644463751067!2d-99.66136037494711!3d19.29009534786161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cd89ea9f7cd297%3A0xa29b8785b09a6143!2sCentro%2C%2050000%20Toluca%20de%20Lerdo%2C%20M%C3%A9x.!5e0!3m2!1ses-419!2smx!4v1633648152889!5m2!1ses-419!2smx"
-                width="400"
-                height="100"
+                width="300"
+                height="200"
                 style="border: 0"
                 allowfullscreen=""
                 loading="lazy"
@@ -343,7 +394,7 @@
             <!-- Grid column -->
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
               <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
               <p>
                 <i class="fas fa-home me-3"></i> Juarez 25 / Centro / Toluca /
                 CP: 50000 / Estado de México / México
