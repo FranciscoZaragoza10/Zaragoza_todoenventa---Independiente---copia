@@ -4,21 +4,14 @@
   padding: 0;
   font-family: "Roboto Slab", serif;
 }
-
 header {
-  
-  background: linear-gradient(
+    background: linear-gradient(
     to left,
     rgb(121, 242, 29, 0.6),
     rgb(121, 242, 29, 0.95)
   );
   box-shadow: 5px 8px 9px rgb(0, 36, 179, 0.7);
   
-}
-
-/header a img {
-  width: 22vw;
-  transition: hover 3s;
 }
 /*NAV*********************************************************************************************************************/
 
@@ -27,12 +20,9 @@ header {
 /*MAIN index***************************************************************************************************************/
 
 .bg_text {
-   backdrop-filter: blur(9px);
   background-color: rgba(0, 0, 0, 0.205);
   border-radius: 7px;
 }
-
-
 .slidein2 {
   animation-duration: 3s;
   animation-name: slidein2;
