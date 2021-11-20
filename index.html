@@ -24,7 +24,7 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
+  <body d-flex flex-column justify-content-xs-evenly>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
@@ -81,7 +81,7 @@
         </div>
       </nav>
     </header>
-    <main class="main__index">
+    <main class="d-flex flex-wrap justify-content-center">
       <section class="main__section container-lg d-flex flex-wrap">
         <div class="row">
           <div class="col-md-8 col-lg-5">
@@ -132,7 +132,7 @@
             d-flex
             col-lg-5 col-md-6
             d-flex
-            justify-content-sm-evenly
+            justify-content-evenly
           "
         >
           <img
@@ -160,8 +160,9 @@
           index__productos.
           container-lg
           d-flex
+          justify-content-evenly
           flex-wrap
-          justify-content-sm-evenly
+          m-3
         "
       >
         <div
@@ -169,17 +170,18 @@
             index__tarjeta
             d-flex
             flex-wrap flex-row
-            col-lg-2 col-sm-4 col-md-3
+            col-lg-2 col-md-3 col-4
             shadow-lg
+            justify-content-center
           "
-          style="height: 350px"
+          style="max-height: 300px"
         >
           <img
             class="img__tarjeta w-100"
             src="imgs/index_productos_1"
             alt="cualidades"
           />
-          <h3>- Jabón Cera -</h3>
+          <h3 class="text-primary">Jabón Cera</h3>
           <h4>$120.00</h4>
         </div>
         <div
@@ -187,17 +189,18 @@
             index__tarjeta
             d-flex
             flex-wrap flex-row
-            col-lg-2 col-sm-4 col-md-3
+            col-lg-2 col-md-3 col-4
             shadow-lg
+            justify-content-center
           "
-          style="height: 350px"
+          style="height: 300px"
         >
           <img
             class="img__tarjeta w-100"
             src="imgs/index_productos_playera.png"
             alt="cualidades"
           />
-          <h3>- Playera Tev -</h3>
+          <h3 class="text-primary">Playera Tev</h3>
           <h4>$110.00</h4>
         </div>
         <div
@@ -205,17 +208,18 @@
             index__tarjeta
             d-flex
             flex-wrap flex-row
-            col-lg-2 col-sm-4 col-md-3
+            col-lg-2 col-md-3 col-4
             shadow-lg
+            justify-content-center
           "
-          style="height: 350px"
+          style="height: 300px"
         >
           <img
             class="img__tarjeta w-100"
             src="imgs/index_productos_pulsera.png"
             alt="cualidades"
           />
-          <h3>- Pulsera Tev -</h3>
+          <h3 class="text-primary">Pulsera Tev</h3>
           <h4>$220.00</h4>
         </div>
         <div
@@ -223,17 +227,18 @@
             index__tarjeta
             d-flex
             flex-wrap flex-row
-            col-lg-2 col-sm-4 col-md-3
+            col-lg-2 col-md-3 col-4
             shadow-lg
+            justify-content-center
           "
-          style="height: 350px"
+          style="height: 300px"
         >
           <img
             class="img__tarjeta w-100"
             src="imgs/index_productos_bolsa.png"
             alt="cualidades"
           />
-          <h3>- Bolsa Tev -</h3>
+          <h3 class="text-primary w-100 text-center">Bolsa Tev</h3>
           <h4>$119.00</h4>
         </div>
         <div
@@ -241,53 +246,119 @@
             index__tarjeta
             d-flex
             flex-wrap flex-row
-            col-lg-2 col-sm-4 col-md-3
+            col-lg-2 col-md-3 col-4
             shadow-lg
+            justify-content-center
           "
-          style="height: 350px"
+          style="height: 300px"
         >
           <img
             class="img__tarjeta w-100"
             src="imgs/index_productos_sombrero.png"
             alt="cualidades"
-            style="height: 200px"
           />
-          <h3 class="w-100">-Sombrero Ltc-</h3>
+          <h3 class="w-100 text-primary text-center">Sombrero Ltc</h3>
           <h4>$99.00</h4>
         </div>
       </section>
     </main>
-    <footer>
-      <div class="div__ubicacion">
-        <p><em class="footer__em">Encuentranos en:</em></p>
-        <ul class="footer__ul">
-          <li>Juarez 25, Centro</li>
-          <li>Toluca, CP: 50000</li>
-          <li>Edo. Méx., México</li>
-          <li>Tel: +52(55)29097337</li>
-        </ul>
-      </div>
+    <footer class="text-center text-lg-start bg-light text-muted">
+      <!-- Section: Social media -->
+      <section
+        class="
+          d-flex
+          justify-content-center justify-content-lg-between
+          p-4
+          border-bottom
+        "
+      >
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span>Siguenos en nuestras redess:</span>
+        </div>
+        <!-- Left -->
 
-      <iframe
-        class="footer__iframe--map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7531.644463751067!2d-99.66136037494711!3d19.29009534786161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cd89ea9f7cd297%3A0xa29b8785b09a6143!2sCentro%2C%2050000%20Toluca%20de%20Lerdo%2C%20M%C3%A9x.!5e0!3m2!1ses-419!2smx!4v1633648152889!5m2!1ses-419!2smx"
-        width="400"
-        height="100"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-      ></iframe>
-      <div class="footer__iconos">
-        <a href="https://wa.me/qr/TGNQ7TG5OUS7H1"
-          ><i class="fab fa-whatsapp"></i
-        ></a>
-        <a href="https://www.facebook.com/"
-          ><i class="fab fa-facebook-f"></i
-        ></a>
-        <a href="https://www.instagram.com/"
-          ><i class="fab fa-instagram"></i
-        ></a>
-      </div>
+        <!-- Right -->
+        <div>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>Todo en Venta
+              </h6>
+              <iframe
+                class="footer__iframe--map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7531.644463751067!2d-99.66136037494711!3d19.29009534786161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cd89ea9f7cd297%3A0xa29b8785b09a6143!2sCentro%2C%2050000%20Toluca%20de%20Lerdo%2C%20M%C3%A9x.!5e0!3m2!1ses-419!2smx!4v1633648152889!5m2!1ses-419!2smx"
+                width="400"
+                height="100"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Mapa</h6>
+              <p>
+                <a href="#!" class="text-reset">Productos</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Nosotros</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">FAQ</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Contactanos</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <p>
+                <i class="fas fa-home me-3"></i> Juarez 25 / Centro / Toluca /
+                CP: 50000 / Estado de México / México
+              </p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                info@tev.com
+              </p>
+              <p><i class="fas fa-phone me-3"></i> +52 55 2909 7337</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
     </footer>
+    <!-- Footer -->
   </body>
 </html>
