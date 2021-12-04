@@ -1,19 +1,22 @@
 .faq__section__table {
-  display: inline-block;
-  padding: 5% 25% 12% 25%;
+  display: flex;
   color: #4a00e0;
-  border-style: dotted;
-  background-image: url(imgs/FAQ.jpg);
+  background-image: url(/imgs/faq_new.jpg);
   background-size: cover;
+  width: 80vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
 }
 .faq__section__table h1 {
   text-align: center;
   background: linear-gradient(
     to right,
-    rgba(255, 217, 0, 0.918),
+    rgb(121, 242, 29, 0.95),
     rgba(255, 0, 0, 0.247)
   );
   backdrop-filter: blur(10%);
+  width: 100%;
 }
 
 .faq__section__table--td {
@@ -29,4 +32,5 @@
   font-size: 1.3em;
   background-color: rgba(0, 255, 255, 0.568);
   backdrop-filter: blur(10%);
+  text-align: center;
 }

@@ -82,12 +82,12 @@
       </nav>
     </header>
     <main class="main__contacto">
-    <form class="main__form" id="form-order">
+    <form class="main__form d-flex" id="form-order">
       
         <fieldset>
-          <legend>Permitenos contactarte</legend>
-        <label for="name"> Nombre *</label>
-        <input
+          <legend class="cont_back text-center mx-auto w-100">Permitenos contactarte</legend>
+        <label for="name" class="cont_back"> Nombre *</label>
+        <input class="mx-3"
           type="text"
           name="name"
           id="name"
@@ -97,8 +97,8 @@
           required
         />
         
-        <label for="email">Email *</label>
-        <input
+        <label for="email" class="cont_back">Email *</label>
+        <input class="mx-4"
           type="text"
           name="email"
           id="email"
@@ -108,16 +108,13 @@
           required
         />
         
-          <label for="rol" id="rol">Rol</label>
-          <div>Comprador
-          <input type="radio" name="rol" value="Comprador">
-          Vendedor
+          <label for="rol" id="rol" class="cont_back fs-5 mt-3">Te interesa</label>
+          <div class="cont_back text-center">Comprar
+          <input type="radio" name="rol" value="Comprador" class="cont_back">
+          Vender
           <input type="radio" name="rol" value="Vendedor"></div> 
-          <div>Podemos enviarte promociones y novedades</div>
-          <div>
-          <input type="checkbox" name="aceptar" value="1">
-        </div>
-          <label for="estado">Estado</label>
+          
+          <label for="estado" class="cont_back my-3 ">Estado</label>
           <select name="estado" id="estado"> 
           <option value="edo mex">Estado de México</option>  
           <option value="cd mex">Ciudad de México</option>  
@@ -128,14 +125,19 @@
         </div>
         </select>
           
-          <label for="comentarios">Comentarios</label>
+          <label for="comentarios" class="cont_back w-100 text-center">Comentarios</label>
           
           <textarea name="comentarios" id="comentarios" cols="30" rows="10" 
           placeholder="Tus comentarios aqui"></textarea>
+
+          <div class="cont_back mt-3 text-center">¿Podemos enviarte promociones y novedades?</div>
+          <div>
+          <input class="w-100 mb-3" type="checkbox" name="aceptar" value="1">
+        </div>
           
                  
           <input type="submit" value="Contactame" class="form">
-          <input type="reset" value="Borrar">
+          <input type="reset" value="Borrar" class="form">
         
       </fieldset>
       
@@ -143,7 +145,7 @@
 
       
     </form>
-    <img src="imgs/circulo.png" class="circulo">
+    
   </main>
   <footer
   class="text-center text-lg-start text-white"

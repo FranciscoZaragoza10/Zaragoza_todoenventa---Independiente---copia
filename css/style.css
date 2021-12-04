@@ -1,5 +1,4 @@
 .productos__table {
-  position: absolute;
   display: inline-block;
   margin: 5% 0% 5% 25%;
   color: blue;
@@ -19,86 +18,20 @@
   backdrop-filter: blur(10px);
 }
 
-.section__img {
-  overflow: hidden;
-  max-height: 30vh;
-  max-width: 50vw;
+.car-productos {
+  width: 75vw;
+  height: 350px;
+  position: relative;
+  margin: auto;
 }
 
-.galeria {
-  display: grid;
-  grid-template-areas: "img1 img2 img3" "img1 img4 img3" "img7 img5 img6";
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  justify-items: center;
-  align-items: center;
-  grid-gap: 0.2%;
-  overflow: hidden;
+.img__car {
+  height: 350px;
   width: 100%;
-  height: 80vh;
 }
 
-.img1 {
-  grid-area: img1;
-  height: 100%;
-  width: 100%;
-  background-image: url(imgs/productos\ 1.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.img2 {
-  grid-area: img2;
-  height: 100%;
-  width: 100%;
-  background-image: url(imgs/productos\ 2.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.img3 {
-  grid-area: img3;
-  height: 100%;
-  width: 100%;
-  background-image: url(imgs/productos\ 3.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.img4 {
-  grid-area: img4;
-  height: 100%;
-  width: 100%;
-  background-image: url(imgs/productos\ 4.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.img5 {
-  grid-area: img5;
-  height: 100%;
-  width: 100%;
-  background-image: url(imgs/productos\ 5.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.img6 {
-  grid-area: img6;
-  height: 100%;
-  width: 100%;
-  background-image: url(imgs/productos\ 6.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.img7 {
-  grid-area: img7;
-  height: 100%;
-  width: 100%;
-  background-image: url(imgs/productos\ 7.jpg);
-  background-size: cover;
-  background-position: center;
+.img__car:hover {
+  filter: opacity(0.8);
 }
 
 .bg_text {
@@ -134,8 +67,17 @@
     margin-left: 0%;
   }
 }
+.img__tarjeta:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+.index__tarjeta {
+  overflow: hidden;
+}
+
 .nosotros__main {
-  background-image: url(imgs/artesano2.jpg);
+  background-image: url(/imgs/artesano2.jpg);
   height: 80%;
   padding: 20% 12% 20% 12%;
   background-size: cover;
@@ -144,7 +86,7 @@
 }
 
 .nosotros__main__h2 {
-  background-color: rgba(255, 255, 255, 0.548);
+  background-color: rgba(255, 255, 255, 0.8);
   display: inline-block;
   position: absolute;
   width: 80%;
@@ -152,18 +94,21 @@
 }
 
 .faq__section__table {
-  display: inline-block;
-  padding: 5% 25% 12% 25%;
+  display: flex;
   color: #4a00e0;
-  border-style: dotted;
-  background-image: url(imgs/FAQ.jpg);
+  background-image: url(/imgs/faq_new.jpg);
   background-size: cover;
+  width: 80vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
 }
 
 .faq__section__table h1 {
   text-align: center;
-  background: linear-gradient(to right, rgba(255, 217, 0, 0.918), rgba(255, 0, 0, 0.247));
+  background: linear-gradient(to right, rgba(121, 242, 29, 0.95), rgba(255, 0, 0, 0.247));
   backdrop-filter: blur(10%);
+  width: 100%;
 }
 
 .faq__section__table--td {
@@ -180,22 +125,22 @@
   font-size: 1.3em;
   background-color: rgba(0, 255, 255, 0.568);
   backdrop-filter: blur(10%);
+  text-align: center;
 }
 
 .main__contacto {
   background-position: center;
-  background-image: url(imgs/landing_artes.jpg);
+  background-image: url(/imgs/landing_artes.jpg);
   display: flex;
   justify-content: center;
   align-content: center;
-  height: 86vh;
+  min-height: 70vh;
   background-size: cover;
 }
 
 .main__form {
-  margin: 10% 0% 10% 0%;
+  margin: 5% 0% 5% 0%;
   width: 40%;
-  display: block;
   color: #4a00e0;
   z-index: 1;
 }
@@ -205,7 +150,7 @@
 }
 
 #email {
-  width: 90%;
+  width: 80%;
 }
 
 #rol {
@@ -221,13 +166,14 @@
   width: 100%;
 }
 
-.circulo {
-  position: absolute;
-  transform: scale(0.95, 0.95);
-  left: 23%;
-  top: 1%;
-  opacity: 95%;
-  z-index: 0;
+.cont_back {
+  background: linear-gradient(to left, rgba(121, 242, 29, 0.6), rgba(121, 242, 29, 0.95));
+}
+
+.form {
+  color: #4a00e0;
+  border-radius: 6px;
+  background: linear-gradient(to left, rgba(121, 242, 29, 0.6), rgba(121, 242, 29, 0.95));
 }
 
 * {
@@ -236,14 +182,16 @@
   padding: 0;
   font-family: "Roboto Slab", serif;
 }
-
-header {
+* header {
   background: linear-gradient(to left, rgba(121, 242, 29, 0.6), rgba(121, 242, 29, 0.95));
   box-shadow: 5px 8px 9px rgba(0, 36, 179, 0.7);
 }
-
-footer {
+* footer {
   background: linear-gradient(to right, rgba(20, 42, 166, 0.7), rgba(20, 42, 166, 0.4));
+}
+
+.price {
+  color: rgba(121, 242, 29, 0.95);
 }
 
 /*# sourceMappingURL=style.css.map */

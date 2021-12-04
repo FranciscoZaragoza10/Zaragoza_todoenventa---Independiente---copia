@@ -32,3 +32,11 @@
     margin-left: 0%;
   }
 }
+
+.img__tarjeta:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+.index__tarjeta {
+  overflow: hidden;
+}
