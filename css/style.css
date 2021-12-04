@@ -77,7 +77,7 @@
 }
 
 .nosotros__main {
-  background-image: url(/imgs/artesano2.jpg);
+  background-image: url(../imgs/artesano2.jpg);
   height: 80%;
   padding: 20% 12% 20% 12%;
   background-size: cover;
@@ -96,7 +96,7 @@
 .faq__section__table {
   display: flex;
   color: #4a00e0;
-  background-image: url(/imgs/faq_new.jpg);
+  background-image: url(../imgs/faq_new.jpg);
   background-size: cover;
   width: 80vw;
   flex-wrap: wrap;
@@ -130,7 +130,7 @@
 
 .main__contacto {
   background-position: center;
-  background-image: url(/imgs/landing_artes.jpg);
+  background-image: url(../imgs/landing_artes.jpg);
   display: flex;
   justify-content: center;
   align-content: center;
