@@ -84,13 +84,13 @@
   position: relative;
   margin-top: -0.005%;
 }
-
-.nosotros__main__h2 {
+.nosotros__main h2 {
   background-color: rgba(255, 255, 255, 0.8);
   display: inline-block;
   position: absolute;
   width: 80%;
   top: 20%;
+  font-size: 1.2rem;
 }
 
 .faq__section__table {
