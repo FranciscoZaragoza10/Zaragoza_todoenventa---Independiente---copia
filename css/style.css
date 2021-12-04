@@ -1,0 +1,249 @@
+.productos__table {
+  position: absolute;
+  display: inline-block;
+  margin: 5% 0% 5% 25%;
+  color: blue;
+  border-style: dotted;
+}
+
+.productos__table th {
+  font-weight: 700;
+  font-size: 1.3vw;
+  background-color: rgba(128, 128, 128, 0.466);
+  backdrop-filter: blur(10px);
+  padding: 8px;
+}
+
+.productos__table td {
+  background-color: rgba(128, 128, 128, 0.514);
+  backdrop-filter: blur(10px);
+}
+
+.section__img {
+  overflow: hidden;
+  max-height: 30vh;
+  max-width: 50vw;
+}
+
+.galeria {
+  display: grid;
+  grid-template-areas: "img1 img2 img3" "img1 img4 img3" "img7 img5 img6";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  grid-gap: 0.2%;
+  overflow: hidden;
+  width: 100%;
+  height: 80vh;
+}
+
+.img1 {
+  grid-area: img1;
+  height: 100%;
+  width: 100%;
+  background-image: url(imgs/productos\ 1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.img2 {
+  grid-area: img2;
+  height: 100%;
+  width: 100%;
+  background-image: url(imgs/productos\ 2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.img3 {
+  grid-area: img3;
+  height: 100%;
+  width: 100%;
+  background-image: url(imgs/productos\ 3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.img4 {
+  grid-area: img4;
+  height: 100%;
+  width: 100%;
+  background-image: url(imgs/productos\ 4.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.img5 {
+  grid-area: img5;
+  height: 100%;
+  width: 100%;
+  background-image: url(imgs/productos\ 5.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.img6 {
+  grid-area: img6;
+  height: 100%;
+  width: 100%;
+  background-image: url(imgs/productos\ 6.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.img7 {
+  grid-area: img7;
+  height: 100%;
+  width: 100%;
+  background-image: url(imgs/productos\ 7.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.bg_text {
+  background-color: rgba(0, 0, 0, 0.205);
+  border-radius: 7px;
+}
+
+.slidein2 {
+  animation-duration: 3s;
+  animation-name: slidein2;
+  animation-delay: 1s;
+}
+
+@keyframes slidein2 {
+  from {
+    margin-right: 10%;
+  }
+  to {
+    margin-right: 0%;
+  }
+}
+.slidein {
+  animation-duration: 5s;
+  animation-name: slidein;
+  animation-delay: 1s;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 10%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+.nosotros__main {
+  background-image: url(imgs/artesano2.jpg);
+  height: 80%;
+  padding: 20% 12% 20% 12%;
+  background-size: cover;
+  position: relative;
+  margin-top: -0.005%;
+}
+
+.nosotros__main__h2 {
+  background-color: rgba(255, 255, 255, 0.548);
+  display: inline-block;
+  position: absolute;
+  width: 80%;
+  top: 20%;
+}
+
+.faq__section__table {
+  display: inline-block;
+  padding: 5% 25% 12% 25%;
+  color: #4a00e0;
+  border-style: dotted;
+  background-image: url(imgs/FAQ.jpg);
+  background-size: cover;
+}
+
+.faq__section__table h1 {
+  text-align: center;
+  background: linear-gradient(to right, rgba(255, 217, 0, 0.918), rgba(255, 0, 0, 0.247));
+  backdrop-filter: blur(10%);
+}
+
+.faq__section__table--td {
+  padding-left: 5%;
+  width: 400px;
+  padding-bottom: 5%;
+  background-color: rgba(245, 247, 243, 0.753);
+  backdrop-filter: blur(10%);
+}
+
+.faq__section__table--th {
+  padding-bottom: 30px;
+  font-weight: 700;
+  font-size: 1.3em;
+  background-color: rgba(0, 255, 255, 0.568);
+  backdrop-filter: blur(10%);
+}
+
+.main__contacto {
+  background-position: center;
+  background-image: url(imgs/landing_artes.jpg);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 86vh;
+  background-size: cover;
+}
+
+.main__form {
+  margin: 10% 0% 10% 0%;
+  width: 40%;
+  display: block;
+  color: #4a00e0;
+  z-index: 1;
+}
+
+#name {
+  width: 80%;
+}
+
+#email {
+  width: 90%;
+}
+
+#rol {
+  width: 100%;
+  text-align: center;
+}
+
+#estado {
+  width: 80%;
+}
+
+#comentarios {
+  width: 100%;
+}
+
+.circulo {
+  position: absolute;
+  transform: scale(0.95, 0.95);
+  left: 23%;
+  top: 1%;
+  opacity: 95%;
+  z-index: 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Slab", serif;
+}
+
+header {
+  background: linear-gradient(to left, rgba(121, 242, 29, 0.6), rgba(121, 242, 29, 0.95));
+  box-shadow: 5px 8px 9px rgba(0, 36, 179, 0.7);
+}
+
+footer {
+  background: linear-gradient(to right, rgba(20, 42, 166, 0.7), rgba(20, 42, 166, 0.4));
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Slab", serif;
+}
+header {
+  background: $headerback;
+  box-shadow: 5px 8px 9px rgb(0, 36, 179, 0.7);
+}
+footer {
+  background: $footergradient;
+}

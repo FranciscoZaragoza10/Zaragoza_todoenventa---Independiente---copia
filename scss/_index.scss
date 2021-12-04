@@ -1,0 +1,34 @@
+.bg_text {
+  background-color: rgba(0, 0, 0, 0.205);
+  border-radius: 7px;
+}
+.slidein2 {
+  animation-duration: 3s;
+  animation-name: slidein2;
+  animation-delay: 1s;
+}
+
+@keyframes slidein2 {
+  from {
+    margin-right: 10%;
+  }
+
+  to {
+    margin-right: 0%;
+  }
+}
+.slidein {
+  animation-duration: 5s;
+  animation-name: slidein;
+  animation-delay: 1s;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 10%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}

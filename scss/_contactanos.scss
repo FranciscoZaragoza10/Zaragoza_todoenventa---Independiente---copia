@@ -1,0 +1,41 @@
+.main__contacto {
+  background-position: center;
+  background-image: url(imgs/landing_artes.jpg);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 86vh;
+  background-size: cover;
+}
+.main__form {
+  margin: 10% 0% 10% 0%;
+  width: 40%;
+  display: block;
+  color: #4a00e0;
+  z-index: 1;
+}
+#name {
+  width: 80%;
+}
+
+#email {
+  width: 90%;
+}
+#rol {
+  width: 100%;
+  text-align: center;
+}
+#estado {
+  width: 80%;
+}
+#comentarios {
+  width: 100%;
+}
+.circulo {
+  position: absolute;
+  transform: scale(0.95, 0.95);
+  left: 23%;
+  top: 1%;
+  opacity: 95%;
+  z-index: 0;
+}
