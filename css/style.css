@@ -78,9 +78,10 @@
 
 .nosotros__main {
   background-image: url(../imgs/artesano2.jpg);
-  height: 80%;
+  min-height: 70vh;
   padding: 20% 12% 20% 12%;
   background-size: cover;
+  background-position: center;
   position: relative;
   margin-top: -0.005%;
 }
@@ -90,7 +91,6 @@
   position: absolute;
   width: 80%;
   top: 20%;
-  font-size: 1.2rem;
 }
 
 .faq__section__table {
