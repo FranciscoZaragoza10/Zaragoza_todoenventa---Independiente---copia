@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/FranciscoZaragoza10/Zaragoza_todoenventa---Independiente---copia/issues"
   },
-  "homepage": "https://github.com/FranciscoZaragoza10/Zaragoza_todoenventa---Independiente---copia#readme"
+  "homepage": "https://github.com/FranciscoZaragoza10/Zaragoza_todoenventa---Independiente---copia#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
 }
