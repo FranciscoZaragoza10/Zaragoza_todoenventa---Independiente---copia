@@ -11201,12 +11201,12 @@ textarea.form-control-lg {
 }
 
 .land {
-  background-image: url(/imgs/landing_artes.jpg);
+  background-image: url(../imgs/landing_artes.jpg);
   background-position: center;
 }
 
 .cualidades {
-  background-image: url(/imgs/fondo_cualidades.jpg);
+  background-image: url(../imgs/fondo_cualidades.jpg);
   background-position: center;
   background-size: cover;
 }
