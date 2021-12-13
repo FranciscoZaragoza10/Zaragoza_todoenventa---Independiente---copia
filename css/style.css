@@ -11198,6 +11198,7 @@ textarea.form-control-lg {
 
 .index__tarjeta {
   overflow: hidden;
+  height: 300px;
 }
 
 .land {
@@ -11300,11 +11301,27 @@ textarea.form-control-lg {
 #name {
   width: 70%;
   margin: 0% 15% 0% 15%;
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(245, 245, 245, 0.815);
+  border-bottom: 2px solid blue;
+}
+
+#name:focus {
+  border: none;
 }
 
 #email {
+  background-color: rgba(245, 245, 245, 0.815);
+  border: none;
   width: 70%;
   margin: 0% 15% 0% 15%;
+  border-radius: 10px;
+  border-bottom: 2px solid blue;
+}
+
+#email:focus {
+  border: none;
 }
 
 #rol {
@@ -11319,6 +11336,10 @@ textarea.form-control-lg {
 #comentarios {
   width: 70%;
   margin: 0% 15% 0% 15%;
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(245, 245, 245, 0.815);
+  border-bottom: 2px solid blue;
 }
 
 .form {

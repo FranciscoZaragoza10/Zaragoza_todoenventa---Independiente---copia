@@ -32,11 +32,25 @@
 #name {
   width: 70%;
   margin: 0% 15% 0% 15%;
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(245, 245, 245, 0.815);
+  border-bottom: 2px solid blue;
+}
+#name:focus {
+  border: none;
 }
 
 #email {
+  background-color: rgba(245, 245, 245, 0.815);
+  border: none;
   width: 70%;
   margin: 0% 15% 0% 15%;
+  border-radius: 10px;
+  border-bottom: 2px solid blue;
+}
+#email:focus {
+  border: none;
 }
 #rol {
   text-align: center;
@@ -48,6 +62,10 @@
 #comentarios {
   width: 70%;
   margin: 0% 15% 0% 15%;
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(245, 245, 245, 0.815);
+  border-bottom: 2px solid blue;
 }
 
 .form {
