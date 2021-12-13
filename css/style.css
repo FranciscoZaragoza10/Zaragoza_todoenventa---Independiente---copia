@@ -11266,6 +11266,10 @@ textarea.form-control-lg {
 .main__contacto {
   position: relative;
 }
+.main__contacto h1, .main__contacto .h1 {
+  position: relative;
+  padding-top: 3%;
+}
 
 .main__contacto::before {
   filter: opacity(50%);
@@ -11283,10 +11287,6 @@ textarea.form-control-lg {
   width: 100%;
   height: 100%;
   content: "";
-}
-
-.main__contacto h1, .main__contacto .h1 {
-  position: relative;
 }
 
 .main__form {
@@ -11325,8 +11325,8 @@ textarea.form-control-lg {
   color: #f8f9fa;
   border-radius: 6px;
   background: #0024b3;
-  margin-top: 1%;
-  margin-bottom: 1%;
+  margin-top: 2%;
+  margin-bottom: 5%;
   padding: 1px 3px 1px 3px;
 }
 
