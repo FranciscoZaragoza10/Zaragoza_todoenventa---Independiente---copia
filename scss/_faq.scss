@@ -3,34 +3,32 @@
   color: #4a00e0;
   background-image: url(../imgs/faq_new.jpg);
   background-size: cover;
-  width: 80vw;
   flex-wrap: wrap;
   justify-content: center;
   margin: auto;
-}
-.faq__section__table h1 {
-  text-align: center;
-  background: linear-gradient(
-    to right,
-    rgb(121, 242, 29, 0.95),
-    rgba(255, 0, 0, 0.247)
-  );
-  backdrop-filter: blur(10%);
-  width: 100%;
-}
-
-.faq__section__table--td {
-  padding-left: 5%;
-  width: 400px;
-  padding-bottom: 5%;
-  background-color: rgba(245, 247, 243, 0.753);
-  backdrop-filter: blur(10%);
-}
-.faq__section__table--th {
-  padding-bottom: 30px;
-  font-weight: 700;
-  font-size: 1.3em;
-  background-color: rgba(0, 255, 255, 0.568);
-  backdrop-filter: blur(10%);
-  text-align: center;
+  h1 {
+    text-align: center;
+    background: linear-gradient(
+      to right,
+      rgb(121, 242, 29, 0.95),
+      rgba(255, 0, 0, 0.247)
+    );
+    backdrop-filter: blur(10%);
+    width: 100%;
+  }
+  &--td {
+    padding-left: 5%;
+    width: 400px;
+    padding-bottom: 5%;
+    background-color: rgba(245, 247, 243, 0.753);
+    backdrop-filter: blur(10%);
+  }
+  &--th {
+    padding-bottom: 30px;
+    font-weight: 700;
+    font-size: 1.3em;
+    background-color: rgba(0, 255, 255, 0.568);
+    backdrop-filter: blur(10%);
+    text-align: center;
+  }
 }

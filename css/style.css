@@ -11241,19 +11241,16 @@ textarea.form-control-lg {
   color: #4a00e0;
   background-image: url(../imgs/faq_new.jpg);
   background-size: cover;
-  width: 80vw;
   flex-wrap: wrap;
   justify-content: center;
   margin: auto;
 }
-
 .faq__section__table h1, .faq__section__table .h1 {
   text-align: center;
   background: linear-gradient(to right, rgba(121, 242, 29, 0.95), rgba(255, 0, 0, 0.247));
   backdrop-filter: blur(10%);
   width: 100%;
 }
-
 .faq__section__table--td {
   padding-left: 5%;
   width: 400px;
@@ -11261,7 +11258,6 @@ textarea.form-control-lg {
   background-color: rgba(245, 247, 243, 0.753);
   backdrop-filter: blur(10%);
 }
-
 .faq__section__table--th {
   padding-bottom: 30px;
   font-weight: 700;
