@@ -11264,19 +11264,35 @@ textarea.form-control-lg {
 }
 
 .main__contacto {
+  position: relative;
+}
+
+.main__contacto::before {
+  filter: opacity(50%);
   background-position: center;
   background-image: url(../imgs/landing_artes.jpg);
   display: flex;
+  position: absolute;
+  top: 0%;
+  left: 0%;
   justify-content: center;
   align-content: center;
   min-height: 70vh;
   background-size: cover;
   flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  content: "";
+}
+
+.main__contacto h1, .main__contacto .h1 {
+  position: relative;
 }
 
 .main__form {
+  position: relative;
   color: #4a00e0;
-  z-index: 1;
+  z-index: 100;
   display: flex;
   justify-content: center;
 }
@@ -11305,10 +11321,6 @@ textarea.form-control-lg {
   margin: 0% 15% 0% 15%;
 }
 
-.cont_back {
-  background: linear-gradient(to left, rgba(121, 242, 29, 0.315), rgba(121, 242, 29, 0.466));
-}
-
 .form {
   color: #f8f9fa;
   border-radius: 6px;
@@ -11320,6 +11332,10 @@ textarea.form-control-lg {
 
 .check {
   transform: scale(2);
+}
+
+.cont_back {
+  color: #0024b3;
 }
 
 /*# sourceMappingURL=style.css.map */
