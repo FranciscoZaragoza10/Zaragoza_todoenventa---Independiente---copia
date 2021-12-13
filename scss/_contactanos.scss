@@ -6,35 +6,46 @@
   align-content: center;
   min-height: 70vh;
   background-size: cover;
+  flex-wrap: wrap;
 }
 .main__form {
-  margin: 5% 0% 5% 0%;
-  width: 40%;
   color: #4a00e0;
   z-index: 1;
+  display: flex;
+  justify-content: center;
 }
 #name {
-  width: 80%;
+  width: 70%;
+  margin: 0% 15% 0% 15%;
 }
 
 #email {
-  width: 80%;
+  width: 70%;
+  margin: 0% 15% 0% 15%;
 }
 #rol {
-  width: 100%;
   text-align: center;
+  margin: 0% 25% 0% 25%;
 }
 #estado {
-  width: 80%;
+  width: 70%;
+  margin: 0% 15% 0% 15%;
 }
 #comentarios {
-  width: 100%;
+  width: 70%;
+  margin: 0% 15% 0% 15%;
 }
 .cont_back {
   background: $cont-back;
 }
 .form {
-  color: #4a00e0;
+  color: $light;
   border-radius: 6px;
-  background: $cont-back;
+  background: $primary;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  padding: 1px 3px 1px 3px;
+}
+.check {
+  transform: scale(2);
 }

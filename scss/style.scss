@@ -1,8 +1,8 @@
-@import "variables.scss";
-@import "productos.scss";
-@import "index.scss";
-@import "nosotros.scss";
-@import "faq.scss";
-@import "contactanos.scss";
-@import "global.scss";
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "variables";
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "global";
+@import "productos";
+@import "index";
+@import "nosotros";
+@import "faq";
+@import "contactanos";
