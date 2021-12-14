@@ -32,10 +32,12 @@
     margin-left: 0%;
   }
 }
-
+.img__tarjeta {
+  margin-top: 15px;
+}
 .img__tarjeta:hover {
-  -webkit-transform: scale(1.3);
-  transform: scale(1.3);
+  transform: scale(1.05);
+  overflow: hidden;
 }
 .index__tarjeta {
   overflow: hidden;
