@@ -11142,6 +11142,10 @@ textarea.form-control-lg {
   color: rgba(121, 242, 29, 0.95);
 }
 
+.allpage {
+  height: 100vh;
+}
+
 .car-productos {
   width: 75vw;
   height: 350px;
