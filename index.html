@@ -31,10 +31,9 @@
     <header>
       <nav class="navbar navbar-expand-sm navbar-dark">
         <div class="container-fluid">
-          <div
-            class="p-4 bg-image container-fluid col-sm-3 col-6 logo"
-                       "
-          ></div>
+          <div class="p-3 bg-image container-fluid col-sm-3 col-6 logo">
+            <a class="logo__link" href="index.html"></a>
+          </div>
           <button
             class="navbar-toggler"
             type="button"
@@ -44,7 +43,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="mynavbar">
-            <ul class="navbar-nav me-auto">
+            <ul class="navbar-nav mx-auto">
               <li class="nav-item">
                 <a class="nav-link text-primary" href="index.html">Inicio</a>
               </li>
@@ -69,7 +68,7 @@
             </ul>
             <form class="d-flex">
               <input
-                class="form-control me-2"
+                class="form-control me-2 buscar"
                 type="text"
                 placeholder="Buscar"
               />
@@ -80,8 +79,7 @@
       </nav>
     </header>
     <main class="d-flex flex-wrap justify-content-center">
-      <section
-        class="bg-image container-lg d-flex flex-wrap mt-4 land">
+      <section class="bg-image container-lg d-flex flex-wrap mt-4 land">
         <div class="row">
           <div class="col-md-8 col-lg-5 col-12">
             <h1
@@ -92,7 +90,7 @@
                 fs-3
                 container-lg
                 text-white
-                my-4
+                my-5
                 bg_text
               "
             >
@@ -125,41 +123,20 @@
             bg-image
             cualidades
           "
-          >
+        >
           <h2 class="fs-3 text-primary text-center">
             Por que comprar en Todo En Venta:
           </h2>
           <ul class="list-group list-group-flush text-center">
-            <li
-              class="list-group-item fs-4 bg-item"
-              
-            >
-              Productos con Causa
-            </li>
-            <li
-              class="list-group-item fs-4 bg-item"
-         
-            >
+            <li class="list-group-item fs-4 bg-item">Productos con Causa</li>
+            <li class="list-group-item fs-4 bg-item">
               Productos hechos en México
             </li>
-            <li
-              class="list-group-item fs-4 bg-item"
-            
-            >
+            <li class="list-group-item fs-4 bg-item">
               Te mostramos el origen de tu producto
             </li>
-            <li
-              class="list-group-item fs-4 bg-item"
-            
-            >
-              Diseño sin igual
-            </li>
-            <li
-              class="list-group-item fs-4 bg-item"
-          
-            >
-              Producto Artesanal
-            </li>
+            <li class="list-group-item fs-4 bg-item">Diseño sin igual</li>
+            <li class="list-group-item fs-4 bg-item">Producto Artesanal</li>
           </ul>
         </div>
         <!-- Carousel -->
@@ -169,7 +146,6 @@
           style="width: 220px"
           data-bs-ride="carousel"
         >
-       
           <!-- The slideshow/carousel -->
           <div class="carousel-inner">
             <div class="carousel-item active img-carrousel">
@@ -177,7 +153,6 @@
                 src="imgs/cualidades.jpg"
                 alt="Los Angeles"
                 class="d-block w-100"
-                
               />
               <div class="carousel-caption">
                 <h3>Trato Justo</h3>
@@ -189,9 +164,8 @@
                 src="imgs/index_cualidades_2.jpg"
                 alt="Chicago"
                 class="d-block w-100"
-               
               />
-              <div class="carousel-caption img-carrousel">
+              <div class="carousel-caption">
                 <h3>Diseño</h3>
                 <p>Encuentra inovación y tendencia</p>
               </div>
@@ -201,9 +175,8 @@
                 src="imgs/index_cualidades_3.jpg"
                 alt="New York"
                 class="d-block w-100"
-                
               />
-              <div class="carousel-caption img-carrousel">
+              <div class="carousel-caption">
                 <h3>Calidad</h3>
                 <p>
                   Generamos confianza al validar los materiales de nuestros
@@ -212,7 +185,6 @@
               </div>
             </div>
           </div>
-         
         </div>
       </section>
       <section
@@ -234,7 +206,6 @@
             shadow-lg
             justify-content-center
           "
-          
         >
           <img
             class="img__tarjeta w-100 rounded"
@@ -256,7 +227,6 @@
             shadow-lg
             justify-content-center
           "
-        
         >
           <img
             class="img__tarjeta w-100 rounded"
@@ -277,7 +247,6 @@
             shadow-lg
             justify-content-center
           "
-        
         >
           <img
             class="img__tarjeta w-100 rounded"
@@ -298,7 +267,6 @@
             shadow-lg
             justify-content-center
           "
-      
         >
           <img
             class="img__tarjeta w-100 rounded"
@@ -319,7 +287,6 @@
             shadow-lg
             justify-content-center
           "
-  
         >
           <img
             class="img__tarjeta w-100 rounded"
@@ -351,9 +318,15 @@
 
         <!-- Right -->
         <div>
-          <a href="https://www.facebook.com/" class="me-4 text-reset"><i class="fab fa-facebook-f fs-2"></i></a>
-          <a href="https://twitter.com/?lang=es" class="me-4 text-reset"><i class="fab fa-twitter fs-2"></i></a>
-          <a href="https://www.instagram.com/" class="me-4 text-reset"><i class="fab fa-instagram fs-2"></i></a>
+          <a href="https://www.facebook.com/" class="me-4 text-reset"
+            ><i class="fab fa-facebook-f fs-2"></i
+          ></a>
+          <a href="https://twitter.com/?lang=es" class="me-4 text-reset"
+            ><i class="fab fa-twitter fs-2"></i
+          ></a>
+          <a href="https://www.instagram.com/" class="me-4 text-reset"
+            ><i class="fab fa-instagram fs-2"></i
+          ></a>
         </div>
         <!-- Right -->
       </section>

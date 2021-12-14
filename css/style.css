@@ -11134,6 +11134,11 @@ textarea.form-control-lg {
   background-position: center;
   background-repeat: no-repeat;
 }
+* .logo__link {
+  width: 100%;
+  height: 10px;
+  display: inline-block;
+}
 * footer {
   background: linear-gradient(to right, rgba(20, 42, 166, 0.7), rgba(20, 42, 166, 0.4));
 }
@@ -11144,6 +11149,17 @@ textarea.form-control-lg {
 
 .allpage {
   height: 100vh;
+}
+
+.nav-item:hover {
+  transform: scale(1.2);
+}
+
+.buscar {
+  background-color: rgba(245, 245, 245, 0.815);
+  border: none;
+  border-radius: 10px;
+  border-bottom: 2px solid blue;
 }
 
 .car-productos {
@@ -11206,14 +11222,47 @@ textarea.form-control-lg {
 }
 
 .land {
+  position: relative;
+}
+
+h1, .h1 {
+  position: relative;
+}
+
+.land::before {
   background-image: url(../imgs/landing_artes.jpg);
   background-position: center;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  content: "";
+  filter: brightness(60%);
 }
 
 .cualidades {
+  position: relative;
+}
+.cualidades h2, .cualidades .h2 {
+  position: relative;
+}
+.cualidades ul li:hover {
+  transform: scale(1.2);
+}
+
+.cualidades:before {
   background-image: url(../imgs/fondo_cualidades.jpg);
   background-position: center;
   background-size: cover;
+  border-radius: 50px;
+  filter: opacity(70%);
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  content: "";
 }
 
 .bg-item {
@@ -11222,6 +11271,9 @@ textarea.form-control-lg {
 
 .img-carrousel {
   height: 350px;
+}
+.img-carrousel img {
+  filter: brightness(60%);
 }
 
 .nosotros__main {

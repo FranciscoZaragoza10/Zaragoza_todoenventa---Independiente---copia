@@ -14,6 +14,11 @@
     background-position: center;
     background-repeat: no-repeat;
   }
+  .logo__link {
+    width: 100%;
+    height: 10px;
+    display: inline-block;
+  }
   footer {
     background: $footergradient;
   }
@@ -23,4 +28,13 @@
 }
 .allpage {
   height: 100vh;
+}
+.nav-item:hover {
+  transform: scale(1.2);
+}
+.buscar {
+  background-color: rgba(245, 245, 245, 0.815);
+  border: none;
+  border-radius: 10px;
+  border-bottom: 2px solid blue;
 }
