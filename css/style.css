@@ -11178,6 +11178,10 @@ textarea.form-control-lg {
   filter: opacity(0.8);
 }
 
+.carousel-item img {
+  filter: brightness(60%);
+}
+
 .bg_text {
   background-color: rgba(0, 0, 0, 0.205);
   border-radius: 7px;
@@ -11329,7 +11333,7 @@ h1, .h1 {
 }
 
 .main__contacto::before {
-  filter: opacity(50%);
+  filter: opacity(60%);
   background-position: center;
   background-image: url(../imgs/landing_artes.jpg);
   display: flex;
