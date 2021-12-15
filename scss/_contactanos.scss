@@ -6,9 +6,9 @@
   }
 }
 .main__contacto::before {
-  filter: opacity(60%);
+  filter: opacity(60%) grayscale(60%) brightness(90%);
   background-position: center;
-  background-image: url(../imgs/landing_artes.jpg);
+  background-image: url(../imgs/faq_new.jpg);
   display: flex;
   position: absolute;
   top: 0%;

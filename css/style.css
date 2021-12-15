@@ -11300,27 +11300,30 @@ h1, .h1 {
 .faq__section__table {
   display: flex;
   color: #4a00e0;
-  background-image: url(../imgs/faq_new.jpg);
+  background-image: url(../imgs/back_faq.jpg);
   background-size: cover;
+  background-position: center;
   flex-wrap: wrap;
   justify-content: center;
   margin: auto;
 }
 .faq__section__table h1, .faq__section__table .h1 {
   text-align: center;
-  background: linear-gradient(to right, rgba(121, 242, 29, 0.95), rgba(255, 0, 0, 0.247));
+  background: linear-gradient(to right, rgba(20, 42, 166, 0.7), rgba(20, 42, 166, 0.4));
   backdrop-filter: blur(10%);
   width: 100%;
 }
 .faq__section__table--td {
   padding-left: 5%;
   width: 400px;
-  padding-bottom: 5%;
+  padding-bottom: 2%;
+  padding-top: 2%;
   background-color: rgba(245, 247, 243, 0.753);
   backdrop-filter: blur(10%);
 }
 .faq__section__table--th {
-  padding-bottom: 30px;
+  padding-bottom: 15px;
+  padding-top: 15px;
   font-weight: 700;
   font-size: 1.3em;
   background-color: rgba(0, 255, 255, 0.568);
@@ -11337,9 +11340,9 @@ h1, .h1 {
 }
 
 .main__contacto::before {
-  filter: opacity(60%);
+  filter: opacity(60%) grayscale(60%) brightness(90%);
   background-position: center;
-  background-image: url(../imgs/landing_artes.jpg);
+  background-image: url(../imgs/faq_new.jpg);
   display: flex;
   position: absolute;
   top: 0%;
