@@ -25,6 +25,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;400;700;900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body d-flex flex-column justify-content-xs-evenly>
     <!--test de comentario-->
@@ -66,13 +67,13 @@
                 >
               </li>
             </ul>
-            <form class="d-flex">
+            <form class="d-flex" id="buscar">
               <input
-                class="form-control me-2 buscar"
+                class="form-control me-2 buscar buscando"
                 type="text"
                 placeholder="Buscar"
               />
-              <button class="btn btn-primary" type="button">Buscar</button>
+              <button class="btn btn-primary" type="submit">Buscar</button>
             </form>
           </div>
         </div>
@@ -83,16 +84,7 @@
         <div class="row">
           <div class="col-md-8 col-lg-5 col-12">
             <h1
-              class="
-                text-center
-                main_p
-                slidein
-                fs-3
-                container-lg
-                text-white
-                my-5
-                bg_text
-              "
+              class="text-center main_p slidein fs-3 container-lg text-white my-5 bg_text"
             >
               Encuentra, compra y disfruta tu producto, apoyando a nuestra mano
               de obra artesanal en México
@@ -102,27 +94,10 @@
       </section>
 
       <section
-        class="
-          d-flex
-          flex-wrap
-          container-md
-          my-5
-          justify-content-evenly
-          shadow-lg
-          align-items-center
-        "
+        class="d-flex flex-wrap container-md my-5 justify-content-evenly shadow-lg align-items-center"
       >
         <div
-          class="
-            d-flex
-            flex-wrap
-            col-lg-7
-            p-3
-            justify-content-center
-            align-items-center
-            bg-image
-            cualidades
-          "
+          class="d-flex flex-wrap col-lg-7 p-3 justify-content-center align-items-center bg-image cualidades"
         >
           <h2 class="fs-3 text-primary text-center">
             Por que comprar en Todo En Venta:
@@ -193,24 +168,10 @@
         </h2>
       </div>
       <section
-        class="
-          index__productos.
-          container-fluid
-          d-flex
-          justify-content-evenly
-          flex-wrap
-          mb-5
-        "
+        class="index__productos. container-fluid d-flex justify-content-evenly flex-wrap mb-5"
       >
         <div
-          class="
-            index__tarjeta
-            d-flex
-            flex-wrap flex-row
-            col-lg-2 col-md-3 col-4
-            shadow-lg
-            justify-content-center
-          "
+          class="index__tarjeta d-flex flex-wrap flex-row col-lg-2 col-md-3 col-4 shadow-lg justify-content-center"
         >
           <img
             class="img__tarjeta w-75 rounded"
@@ -224,16 +185,10 @@
           <h4 class="fw-bold shadow-sm bg-white rounded">
             <i class="fas fa-shopping-bag text-primary"></i> $120.00
           </h4>
+          <button class="btn add-cart1">Agregar</button>
         </div>
         <div
-          class="
-            index__tarjeta
-            d-flex
-            flex-wrap flex-row
-            col-lg-2 col-md-3 col-4
-            shadow-lg
-            justify-content-center
-          "
+          class="index__tarjeta d-flex flex-wrap flex-row col-lg-2 col-md-3 col-4 shadow-lg justify-content-center"
         >
           <img
             class="img__tarjeta w-75 rounded"
@@ -246,16 +201,10 @@
           <h4 class="fw-bold shadow-sm bg-white rounded">
             <i class="fas fa-shopping-bag text-primary"></i> $110.00
           </h4>
+          <button class="btn add-cart2">Agregar</button>
         </div>
         <div
-          class="
-            index__tarjeta
-            d-flex
-            flex-wrap flex-row
-            col-lg-2 col-md-3 col-4
-            shadow-lg
-            justify-content-center
-          "
+          class="index__tarjeta d-flex flex-wrap flex-row col-lg-2 col-md-3 col-4 shadow-lg justify-content-center"
         >
           <img
             class="img__tarjeta w-75 rounded"
@@ -268,16 +217,10 @@
           <h4 class="fw-bold shadow-sm bg-white rounded">
             <i class="fas fa-shopping-bag text-primary"></i> $220.00
           </h4>
+          <button class="btn add-cart3">Agregar</button>
         </div>
         <div
-          class="
-            index__tarjeta
-            d-flex
-            flex-wrap flex-row
-            col-lg-2 col-md-3 col-4
-            shadow-lg
-            justify-content-center
-          "
+          class="index__tarjeta d-flex flex-wrap flex-row col-lg-2 col-md-3 col-4 shadow-lg justify-content-center"
         >
           <img
             class="img__tarjeta w-75 rounded"
@@ -290,16 +233,10 @@
           <h4 class="fw-bold shadow-sm bg-white rounded">
             <i class="fas fa-shopping-bag text-primary"></i> $119.00
           </h4>
+          <button class="btn add-cart4">Agregar</button>
         </div>
         <div
-          class="
-            index__tarjeta
-            d-flex
-            flex-wrap flex-row
-            col-lg-2 col-md-3 col-4
-            shadow-lg
-            justify-content-center
-          "
+          class="index__tarjeta d-flex flex-wrap flex-row col-lg-2 col-md-3 col-4 shadow-lg justify-content-center"
         >
           <img
             class="img__tarjeta w-75 rounded"
@@ -312,40 +249,23 @@
           <h4 class="fw-bold shadow-sm bg-white rounded">
             <i class="fas fa-shopping-bag text-primary"></i> $99.00
           </h4>
+          <button class="btn add-cart5">Agregar</button>
         </div>
+      </section>
+      <section
+        id="pre-cart"
+        class="w-100 d-flex justify-content-center flex-wrap"
+      >
         <div
-          class="
-            index__tarjeta
-            d-flex
-            flex-wrap flex-row
-            col-lg-2 col-md-3 col-4
-            shadow-lg
-            justify-content-center
-          "
-        >
-          <img
-            class="img__tarjeta w-75 rounded"
-            src="imgs/index_productos_bolsa.png"
-            alt="bolsa"
-          />
-          <h3 class="text-primary fs-5 mx-2 my-1 text-center w-100">
-            Bolsa Tev
-          </h3>
-          <h4 class="fw-bold shadow-sm bg-white rounded">
-            <i class="fas fa-shopping-bag text-primary"></i> $119.00
-          </h4>
-        </div>
+          id="cart"
+          class="w-100 d-flex justify-content-end flex-wrap mb-5"
+        ></div>
       </section>
     </main>
     <footer class="text-center text-lg-start text-white">
       <!-- Section: Social media -->
       <section
-        class="
-          d-flex
-          justify-content-center justify-content-lg-between
-          p-2
-          border-bottom
-        "
+        class="d-flex justify-content-center justify-content-lg-between p-2 border-bottom"
       >
         <!-- Left -->
         <div class="me-5 d-none d-lg-block fs-4">

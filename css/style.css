@@ -11283,6 +11283,14 @@ h1, .h1 {
   filter: brightness(60%);
 }
 
+.carrito_prod {
+  height: 200px;
+}
+
+.img__carrito {
+  height: 190px;
+}
+
 .nosotros__main {
   background-image: url(../imgs/artesano2.jpg);
   min-height: 70vh;
