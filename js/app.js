@@ -44,6 +44,7 @@ $(() => {
      
       <button id="total" class="btn-primary btn text-align-center mx-3" >Ver Total</button>
       <button id="pay" class="btn-primary btn text-align-center mx-3" >Pagar</button>
+
     </div>`
   );
 
@@ -88,14 +89,16 @@ $(() => {
     localStorage.setItem("cart", JSON.stringify(cart));
     showProducts();
   });
+
   function totalMountCart() {
     const totalPrice = cart.reduce((total, item) => item.precio + total, 0);
 
     $("#pre-cart").append(
-      `<div class="w-100 d-flex justify-content-center">
-          <h2>El monto total de tu compra es $${totalPrice}</h2>
-        </div>`
+      `<div  class="w-100 d-flex justify-content-center total_cart" >
+        <h2 id="total">El monto total de tu compra es $${totalPrice}</h2>
+      </div>`
     );
+    $(".total_cart").fadeOut(3000).fadeIn(3000);
   }
 
   function showProducts() {
