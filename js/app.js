@@ -100,7 +100,14 @@ $(() => {
     );
     $(".total_cart").fadeOut(3000).fadeIn(3000);
   }
-
+  $("#cart").append(
+    `<button id="ajax" class="btn-primary btn text-align-center mx-3" >AJAX</button>`
+  );
+  $("#ajax").click(function () {
+    fetch("https://jsonplaceholder.typicode.com/todos/1")
+      .then((response) => response.json())
+      .then((json) => console.log(json));
+  });
   function showProducts() {
     const cartStorage = JSON.parse(localStorage.getItem("cart"));
     if (cartStorage !== null) {
