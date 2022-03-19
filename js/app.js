@@ -39,7 +39,7 @@ $(() => {
     },
   ];
   $("#pre-cart").append(
-    `<div class="w-100 d-flex justify-content-center">
+    `<div class="w-100 d-flex justify-content-center my-4">
       <button id="empty" class="btn-primary btn text-align-center mx-3" >Vaciar Carrito</button>
      
       <button id="total" class="btn-primary btn text-align-center mx-3" >Ver Total</button>
@@ -55,9 +55,13 @@ $(() => {
     cart = [];
     container.innerHTML = "";
     showProducts();
+    totalMountCart();
   });
   $("#total").on("click", function () {
     totalMountCart();
+  });
+  $(".erase-cart").on("click", function () {
+    eraseCart();
   });
   $(".add-cart1").click(function (e) {
     e.preventDefault();
@@ -92,13 +96,13 @@ $(() => {
 
   function totalMountCart() {
     const totalPrice = cart.reduce((total, item) => item.precio + total, 0);
-
+    $(".total_cart").remove();
     $("#pre-cart").append(
-      `<div  class="w-100 d-flex justify-content-center total_cart" >
+      `<div  class="w-100 d-flex justify-content-center total_cart my-3" >
         <h2 id="total">El monto total de tu compra es $${totalPrice}</h2>
       </div>`
     );
-    $(".total_cart").fadeOut(3000).fadeIn(3000);
+    $(".total_cart").fadeOut(2000).fadeIn(2000);
   }
   $("#cart").append(
     `<button id="ajax" class="btn-primary btn text-align-center mx-3" >AJAX</button>`
@@ -108,6 +112,9 @@ $(() => {
       .then((response) => response.json())
       .then((json) => console.log(json));
   });
+  function eraseCart() {
+    $(".carrito_prod").remove();
+  }
   function showProducts() {
     const cartStorage = JSON.parse(localStorage.getItem("cart"));
     if (cartStorage !== null) {
